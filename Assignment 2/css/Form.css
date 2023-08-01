@@ -1,0 +1,151 @@
+/*Reset Styling*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* For responsiveness on small screens  */
+@media screen and (max-width: 768px) {
+  body.flex {
+    flex-direction: column;
+  }
+}
+
+/* Styling for header */
+.flex>header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(223, 25, 25);
+  color: #fff;
+  padding: 20px 30px;
+}
+
+/* Styling header title*/
+.flex>header>h1 {
+  width: auto;
+  flex-grow: 1;
+}
+
+/*For navbar*/
+.flex>header>nav {
+  list-style: none;
+  color: whitesmoke;
+}
+
+.flex>header>nav>menu {
+  list-style: none;
+  display: flex;
+}
+
+.flex>header>nav>menu>li {
+  padding: 0px 15px;
+}
+
+.flex>header>nav>menu>li>a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* Apply styling to the form elements */
+.flex>form {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+/*Styling on labels inside form*/
+.flex>form>label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/*Styling on inputs inside form*/
+.flex>form>input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f9f2f2;
+  border-radius: 5px;
+}
+
+/*Now for selecting pizza*/
+.flex>form>#Pizza {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f9f2f2;
+  border-radius: 5px;
+}
+
+/*Pizza Size*/
+.flex>form>#size {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f9f2f2;
+  border-radius: 5px;
+}
+
+/*Div for toppings*/
+.flex>form>div>label {
+  display: block;
+}
+
+.flex>form>.Add {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f9f2f2;
+  border-radius: 5px;
+}
+
+.flex>form>.Add>.TOPPINGS {
+  margin: 15px;
+}
+
+/*Checkbox styling*/
+.flex>form>.Add>.TOPPINGS>input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/*Select for delivery type*/
+.flex>form>#method {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0;
+  border: 1px solid #f9f2f2;
+  border-radius: 5px;
+}
+
+/* Spread the information on the whole page */
+body.flex {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(226, 243, 132);
+}
+
+/* Apply styles to the submit button */
+.flex>form>button {
+  margin-top: 3rem;
+  width: 22%;
+  height: 3rem;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  background-color: rgb(244, 222, 25);
+  min-width: 6rem;
+}
+
+/* Styling for footer */
+.flex>footer {
+  text-align: center;
+  background-color: rgb(223, 25, 25);
+  color: #fff;
+  padding: 20px 30px;
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Welcome</title>
+  <meta name="description" content="Fill in the Form">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/Form.css">
+</head>
+
+<body class="flex">
+  <header>
+    <!--Main Heading for ordering pizza-->
+    <h1>Let's Order Pizza</h1>
+    <!--Navbar-->
+    <nav>
+      <menu>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="Form.html">ORDER NOW</a></li>
+      </menu>
+    </nav>
+  </header>
+  <!--Main Form-->
+  <form action="#" method="post">
+    <!--Different labels and inputs-->
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your Name" required>
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" placeholder="Enter your Email-Id" required>
+    <label for="number">Mobile No:</label>
+    <input type="tel" id="number" placeholder="Enter your Phone Number" required>
+    <!--Now select type for selecting pizza-->
+    <label for="Pizza">Select Pizza:</label>
+    <select id="Pizza">
+      <option value="Tandoori Paneer">Tandoori Paneer</option>
+      <option value="Margherita">Margherita</option>
+      <option value="Onion">Onion</option>
+      <option value="Tomato">Tomato</option>
+      <option value="Chicken Pizza">Chicken Pizza</option>
+      <option value="Italian Pizza">Italian Pizza</option>
+      <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+      <option value="Mix Veg">Mix Veg</option>
+    </select>
+    <!--Now select type for size of pizza-->
+    <label for="size">Size of Pizza:</label>
+    <select id="size">
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+      <option value="Extra Large">Extra Large</option>
+    </select>
+    <!--Div for toppings-->
+    <div class="Add">
+      <label>Toppings:</label>
+      <!--Using checkbox-->
+      <div class="TOPPINGS">
+        <input type="checkbox" id="topping1" value="Pepperoni">
+        <label for="topping1">Pepperoni</label>
+        <br>
+        <input type="checkbox" id="topping2" value="Mushrooms">
+        <label for="topping2">Mushrooms</label>
+        <br>
+        <input type="checkbox" id="topping3" value="Onions">
+        <label for="topping3">Onions</label>
+        <br>
+        <input type="checkbox" id="topping4" value="Paneer">
+        <label for="topping4">Paneer</label>
+        <br>
+        <input type="checkbox" id="topping5" value="Tomato">
+        <label for="topping5">Tomato</label>
+        <br>
+        <input type="checkbox" id="topping6" value="Pepper">
+        <label for="topping6">Pepper</label>
+        <br>
+        <input type="checkbox" id="topping7" value="Olives">
+        <label for="topping7">Olives</label>
+        <br>
+        <input type="checkbox" id="topping8" value="Cheese">
+        <label for="topping8">Cheese</label>
+      </div>
+    </div>
+    <!--Again using select option for delivery type-->
+    <label for="method">Delivery Method:</label>
+    <select id="method">
+      <option value="Takeout">Takeout</option>
+      <option value="Delivery">Delivery</option>
+    </select>
+    <!--Submit Button-->
+    <button type="submit">Submit Order</button>
+  </form>
+  <!--Footer of the page-->
+  <footer>&copy; 2023 Fusion All Rights Reserved. Privacy Policy</footer>
+</body>
+
+</html>
